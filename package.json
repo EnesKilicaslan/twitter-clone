@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "icon": "svgr -d components/icons --replace-attr-values \"#fff=currentColor\" icons"
   },
   "repository": {
     "type": "git",
@@ -28,13 +29,14 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "css-loader": "^5.2.7",
     "@babel/core": "^7.15.0",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "@svgr/cli": "^5.5.0",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.7",
     "style-loader": "^2.0.0"
   }
 }

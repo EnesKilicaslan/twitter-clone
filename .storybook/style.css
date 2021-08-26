@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  padding: 10px;
+  color: blue;
+}
+
+svg {
+  font-size: 40px;
+}
