@@ -36,6 +36,15 @@ module.exports = {
             modules: true,
           },
         },
+        {
+          loader: "postcss-loader",
+          options: {
+            sourceMap: true,
+            postcssOptions: {
+              config: "./.storybook/",
+            },
+          },
+        },
       ],
     });
 

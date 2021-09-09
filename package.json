@@ -33,10 +33,14 @@
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.3.7",
     "@svgr/cli": "^5.5.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.7",
+    "postcss": "^8",
+    "postcss-loader": "^4.2.0",
+    "postcss-nested": "^5.0.6",
     "style-loader": "^2.0.0"
   }
 }
