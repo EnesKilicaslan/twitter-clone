@@ -1,0 +1,12 @@
+.navButton {
+  background-color: blue;
+  //olor: white;
+
+  svg {
+    color: purple;
+  }
+}
+/* 
+.navButton svg {
+  color: red;
+} */
