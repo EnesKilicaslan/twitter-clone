@@ -1,10 +1,7 @@
 .navigation {
-}
-
-.navigation button {
-  margin-top: 10px;
-  display: block;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
+  button {
+    & + button {
+      margin-top: 8px;
+    }
+  }
 }

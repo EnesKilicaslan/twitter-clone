@@ -13,6 +13,7 @@ import {
 } from "./icons";
 
 import { NavButton } from "./NavButton";
+import { TitleBold } from "./TitleBold";
 
 export const Navigation = () => {
   return (
@@ -23,42 +24,42 @@ export const Navigation = () => {
 
       <NavButton>
         <Home />
-        <span>Home</span>
+        <TitleBold>Home</TitleBold>
       </NavButton>
 
       <NavButton>
         <Explore />
-        <span>Explore</span>
+        <TitleBold>Explore</TitleBold>
       </NavButton>
 
       <NavButton>
         <Notification />
-        <span>Notification</span>
+        <TitleBold>Notification</TitleBold>
       </NavButton>
 
       <NavButton>
         <Messages />
-        <span>Messages</span>
+        <TitleBold>Messages</TitleBold>
       </NavButton>
 
       <NavButton>
         <Bookmark />
-        <span>Bookmark</span>
+        <TitleBold>Bookmark</TitleBold>
       </NavButton>
 
       <NavButton>
         <Lists />
-        <span>Lists</span>
+        <TitleBold>Lists</TitleBold>
       </NavButton>
 
       <NavButton>
         <Profile />
-        <span>Profile</span>
+        <TitleBold>Profile</TitleBold>
       </NavButton>
 
       <NavButton>
         <More />
-        <span>More</span>
+        <TitleBold>More</TitleBold>
       </NavButton>
     </nav>
   );

@@ -1,12 +1,19 @@
 .navButton {
-  background-color: blue;
-  //olor: white;
+  background-color: var(--c-primary);
+  color: var(--c-text-color);
+  padding: 10px;
+  border-radius: 99px;
+
+  display: flex;
+  align-items: center;
 
   svg {
-    color: purple;
+    font-size: 26px;
+  }
+
+  h2,
+  span {
+    margin-left: 20px;
+    margin-right: 19px;
   }
 }
-/* 
-.navButton svg {
-  color: red;
-} */
