@@ -1,3 +1,5 @@
 .twitterButton {
   cursor: pointer;
+  background: transparent;
+  border-color: transparent;
 }

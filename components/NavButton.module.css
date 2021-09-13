@@ -1,5 +1,4 @@
 .navButton {
-  background-color: var(--c-primary);
   color: var(--c-text-color);
   padding: 10px;
   border-radius: 99px;
@@ -15,5 +14,10 @@
   span {
     margin-left: 20px;
     margin-right: 19px;
+  }
+
+  &:hover {
+    background-color: var(--c-theme-20);
+    border-color: var(--c-theme-20);
   }
 }
