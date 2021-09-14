@@ -21,3 +21,7 @@
     border-color: var(--c-theme-20);
   }
 }
+
+.selectedNavButton {
+  background-color: var(--c-theme);
+}

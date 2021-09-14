@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./NavButton.module.css";
 import { Button } from "./Button";
+import cn from "classnames";
 
-export const NavButton = ({ children, ...props }) => {
+export const NavButton = ({ children, selected, ...props }) => {
   return (
-    <Button className={styles.navButton} {...props}>
+    <Button
+      className={cn(styles.navButton, selected && styles.selectedNavButton)}
+      {...props}
+    >
       {children}
     </Button>
   );

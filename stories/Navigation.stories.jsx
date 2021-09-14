@@ -9,4 +9,6 @@ export default {
 const Template = (args) => <Navigation {...args} />;
 
 export const LeftNavigation = Template.bind({});
-LeftNavigation.args = {};
+LeftNavigation.args = {
+  selectedItem: "home",
+};

@@ -15,49 +15,49 @@ import {
 import { NavButton } from "./NavButton";
 import { TitleBold } from "./TitleBold";
 
-export const Navigation = () => {
+export const Navigation = ({ selectedItem, ...props }) => {
   return (
     <nav className={styles.navigation}>
       <NavButton>
         <Twitter />
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "home"}>
         <Home />
         <TitleBold>Home</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "explore"}>
         <Explore />
         <TitleBold>Explore</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "notification"}>
         <Notification />
         <TitleBold>Notification</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "messages"}>
         <Messages />
         <TitleBold>Messages</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "bookmark"}>
         <Bookmark />
         <TitleBold>Bookmark</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "lists"}>
         <Lists />
         <TitleBold>Lists</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "profile"}>
         <Profile />
         <TitleBold>Profile</TitleBold>
       </NavButton>
 
-      <NavButton>
+      <NavButton selected={selectedItem === "more"}>
         <More />
         <TitleBold>More</TitleBold>
       </NavButton>
