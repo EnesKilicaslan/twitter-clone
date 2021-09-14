@@ -32,7 +32,10 @@ export const Navigation = ({ selectedItem, ...props }) => {
         <TitleBold>Explore</TitleBold>
       </NavButton>
 
-      <NavButton selected={selectedItem === "notification"}>
+      <NavButton
+        selected={selectedItem === "notification"}
+        notificationCount={15}
+      >
         <Notification />
         <TitleBold>Notification</TitleBold>
       </NavButton>

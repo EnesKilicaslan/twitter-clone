@@ -3,3 +3,8 @@
   background: transparent;
   border-color: transparent;
 }
+
+.primaryButtonStorybook {
+  color: white;
+  border: 1px solid white;
+}
