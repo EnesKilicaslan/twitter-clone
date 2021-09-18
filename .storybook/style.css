@@ -7,7 +7,7 @@ body {
   grid-template-columns: repeat(10, 1fr);
   gap: 1rem;
   padding: 10px;
-  color: blue;
+  color: var(--c-text-color);
 }
 
 svg {
