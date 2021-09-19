@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn build-storybook && next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o public/storybook",
     "icon": "svgr -d components/icons --replace-attr-values \"#fff=currentColor\" icons"
   },
   "repository": {
