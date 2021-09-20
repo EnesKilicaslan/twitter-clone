@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, NavButton, TitleBold } from "../components";
+import { Button, NavButton, TextTitle } from "../components";
 import { Home } from "../components/icons";
 import styles from "../components/Button.module.css";
 
@@ -9,11 +9,7 @@ export default {
   argTypes: {},
 };
 
-const ButtonTemplate = (args) => (
-  <Button {...args} className={styles.primaryButtonStorybook}>
-    Primary
-  </Button>
-);
+const ButtonTemplate = (args) => <Button {...args}>Primary</Button>;
 
 export const Primary = ButtonTemplate.bind({});
 Primary.args = {};
@@ -21,7 +17,7 @@ Primary.args = {};
 const NavButtonTemplate = (args) => (
   <NavButton {...args}>
     <Home />
-    <TitleBold>Home</TitleBold>
+    <TextTitle>Home</TextTitle>
   </NavButton>
 );
 

@@ -13,7 +13,7 @@ import {
 } from "./icons";
 
 import { NavButton } from "./NavButton";
-import { TitleBold } from "./TitleBold";
+import { TextTitle } from "./TextTitle";
 
 export const Navigation = ({ selectedItem, ...props }) => {
   return (
@@ -24,12 +24,12 @@ export const Navigation = ({ selectedItem, ...props }) => {
 
       <NavButton selected={selectedItem === "home"}>
         <Home />
-        <TitleBold>Home</TitleBold>
+        <TextTitle>Home</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "explore"}>
         <Explore />
-        <TitleBold>Explore</TitleBold>
+        <TextTitle>Explore</TextTitle>
       </NavButton>
 
       <NavButton
@@ -37,32 +37,32 @@ export const Navigation = ({ selectedItem, ...props }) => {
         notificationCount={15}
       >
         <Notification />
-        <TitleBold>Notification</TitleBold>
+        <TextTitle>Notification</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "messages"}>
         <Messages />
-        <TitleBold>Messages</TitleBold>
+        <TextTitle>Messages</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "bookmark"}>
         <Bookmark />
-        <TitleBold>Bookmark</TitleBold>
+        <TextTitle>Bookmark</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "lists"}>
         <Lists />
-        <TitleBold>Lists</TitleBold>
+        <TextTitle>Lists</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "profile"}>
         <Profile />
-        <TitleBold>Profile</TitleBold>
+        <TextTitle>Profile</TextTitle>
       </NavButton>
 
       <NavButton selected={selectedItem === "more"}>
         <More />
-        <TitleBold>More</TitleBold>
+        <TextTitle>More</TextTitle>
       </NavButton>
     </nav>
   );

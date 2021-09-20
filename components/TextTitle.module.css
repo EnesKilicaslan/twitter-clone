@@ -1,7 +1,11 @@
-.titleBold {
+.title {
   margin-top: 0;
   margin-bottom: 0;
 
   font-size: 19px;
+  font-weight: normal;
+}
+
+.titleBold {
   font-weight: bold;
 }

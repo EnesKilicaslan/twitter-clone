@@ -2,9 +2,9 @@
   cursor: pointer;
   background: transparent;
   border-color: transparent;
+  color: var(--c-text-color);
 }
-
+/* 
 .primaryButtonStorybook {
-  color: white;
   border: 1px solid white;
-}
+} */
