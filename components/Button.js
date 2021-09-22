@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./Button.module.css";
 import cn from "classnames";
 
-export const Button = ({ children, className, ...props }) => {
+export const Button = ({
+  children,
+  className,
+  isFullWidth = false,
+  ...props
+}) => {
   return (
     <button
       type="button"
-      className={cn(styles.twitterButton, className)}
+      className={cn(styles.button, isFullWidth && styles.fullWidth, className)}
       {...props}
     >
       {children}
