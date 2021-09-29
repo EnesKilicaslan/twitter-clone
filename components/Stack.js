@@ -11,12 +11,5 @@ export const Stack = ({ gap = 10, isColumn, children }) => {
     >
       {children}
     </div>
-    // <button
-    //   type="button"
-    //   className={cn(styles.button, isFullWidth && styles.fullWidth, className)}
-    //   {...props}
-    // >
-    //   {children}
-    // </button>
   );
 };

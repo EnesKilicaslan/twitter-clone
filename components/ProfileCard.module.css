@@ -1,0 +1,31 @@
+.card {
+  padding: 10px;
+
+  &:hover {
+    color: var(--c-text-color);
+  }
+}
+
+.cardBody {
+  margin-left: 10px;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.bodyItem {
+  margin: 4px 0px 4px 3px;
+}
+
+.slug {
+  color: var(--c-gray);
+  margin-left: 0px;
+}
+
+.icon {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.slug {
+  text-color: var(--c-grey);
+}
