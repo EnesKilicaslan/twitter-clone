@@ -15,7 +15,7 @@ import {
 import { NavButton } from "./NavButton";
 import { TextTitle } from "./TextTitle";
 
-export const Navigation = ({ selectedItem, ...props }) => {
+export const Navigation = ({ isFlat = false, selectedItem, ...props }) => {
   return (
     <nav className={styles.navigation}>
       <NavButton>
