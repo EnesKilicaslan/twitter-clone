@@ -1,5 +1,12 @@
 @import "./variables.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
 html {
   font-size: 15px;
 }
@@ -12,8 +19,4 @@ body {
 
   background-color: var(--c-primary);
   color: var(--c-text-color);
-}
-
-p {
-  margin: 0px;
 }

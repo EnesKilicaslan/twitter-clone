@@ -40,6 +40,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.7",
     "postcss": "^8",
+    "postcss-custom-media": "^8.0.0",
     "postcss-loader": "^4.2.0",
     "postcss-nested": "^5.0.6",
     "style-loader": "^2.0.0"
