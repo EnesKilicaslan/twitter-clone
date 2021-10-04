@@ -3,11 +3,14 @@
   grid-template-columns: 230px 1fr;
   min-height: 100vh;
 
-  border: solid 1px;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (--t) {
   .layout {
+    max-width: 1270px;
     grid-template-columns: 230px 1fr 230px;
   }
 }

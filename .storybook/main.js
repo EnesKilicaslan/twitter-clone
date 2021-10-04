@@ -8,6 +8,8 @@ module.exports = {
   addons: [
     "@storybook/addon-actions",
     "@storybook/addon-links",
+    "@storybook/addon-controls",
+
     {
       name: "@storybook/addon-postcss",
       options: {
