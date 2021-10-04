@@ -7,10 +7,10 @@ export const Sidebar = ({ isFlat, children }) => {
   return (
     <div className={cn(styles.sidebar)}>
       <Navigation isFlat={isFlat} />
-      <ThemeButton isFullWidth isLarge>
-        Tweet
+      <ThemeButton isFullWidth={!isFlat} isLarge={!isFlat}>
+        {isFlat ? "T" : "Tweet"}
       </ThemeButton>
-      <ProfileCard />
+      <ProfileCard isFlat={isFlat} />
     </div>
   );
 };

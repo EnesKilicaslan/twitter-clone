@@ -8,11 +8,11 @@ export const HomePage = () => {
 
   return (
     <Layout>
-      <Sidebar isFlat={size.width < SCREEN_SIZE.DESKTOP}>sidebar</Sidebar>
+      <Sidebar isFlat={size.width < SCREEN_SIZE.TABLET}>sidebar</Sidebar>
 
-      <Main>main</Main>
+      <Main>{JSON.stringify(size)}</Main>
 
-      {size.width > SCREEN_SIZE.TABLET && <Extra>extra</Extra>}
+      {size.width > SCREEN_SIZE.DESKTOP && <Extra>extra</Extra>}
     </Layout>
   );
 };
