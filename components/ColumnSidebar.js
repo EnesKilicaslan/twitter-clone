@@ -6,7 +6,7 @@ import { Navigation, ProfileCard, ThemeButton } from "../components";
 export const Sidebar = ({ isFlat, children }) => {
   return (
     <div className={cn(styles.sidebar)}>
-      <Navigation isFlat={isFlat} />
+      <Navigation isFlat={isFlat} selectedItem="home" />
 
       <div className={styles.tweet}>
         <ThemeButton isFullWidth={!isFlat} isLarge={!isFlat}>
