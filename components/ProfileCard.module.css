@@ -4,6 +4,7 @@
   &:hover {
     color: var(--c-text-color);
   }
+  margin-bottom: 20px;
 }
 
 .cardBody {

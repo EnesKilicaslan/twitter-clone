@@ -7,3 +7,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+.tweet {
+  margin-top: 16px;
+  margin-bottom: 40px;
+
+  @media (--t) {
+    width: 100%;
+  }
+}
+
+.profile {
+  margin-top: auto;
+}

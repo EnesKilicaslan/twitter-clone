@@ -12,7 +12,9 @@ export const HomePage = () => {
 
       <Main>{JSON.stringify(size)}</Main>
 
-      {size.width > SCREEN_SIZE.DESKTOP && <Extra>extra</Extra>}
+      {size.width > SCREEN_SIZE.DESKTOP && (
+        <Extra>{JSON.stringify(size.width > SCREEN_SIZE.DESKTOP)}</Extra>
+      )}
     </Layout>
   );
 };

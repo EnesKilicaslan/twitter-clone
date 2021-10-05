@@ -6,10 +6,12 @@
   max-width: 670px;
   margin-left: auto;
   margin-right: auto;
-}
 
-@media (--d) {
-  .layout {
+  @media (--t) {
+    max-width: 900px;
+  }
+
+  @media (--d) {
     max-width: 1270px;
     grid-template-columns: auto 1fr 300px;
   }
