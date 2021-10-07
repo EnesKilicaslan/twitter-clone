@@ -1,69 +1,9 @@
 import React from "react";
-import styles from "./Navigation.module.css";
-import {
-  Twitter,
-  Home,
-  Explore,
-  Notification,
-  Messages,
-  Bookmark,
-  Lists,
-  Profile,
-  More,
-} from "./icons";
 
+import styles from "./Navigation.module.css";
 import { NavButton } from "./NavButton";
 import { TextTitle } from "./TextTitle";
-
-const menuItems = [
-  {
-    name: "twitter",
-    component: <Twitter />,
-  },
-  {
-    name: "home",
-    component: <Home />,
-    title: "Home",
-  },
-  {
-    name: "explore",
-    component: <Explore />,
-    title: "Explore",
-  },
-
-  {
-    name: "notification",
-    component: <Notification />,
-    title: "Notification",
-    notification: 15,
-  },
-  {
-    name: "messages",
-    component: <Messages />,
-    title: "Messages",
-  },
-  {
-    name: "bookmark",
-    component: <Bookmark />,
-    title: "Bookmark",
-  },
-
-  {
-    name: "lists",
-    component: <Lists />,
-    title: "Lists",
-  },
-  {
-    name: "profile",
-    component: <Profile />,
-    title: "Profile",
-  },
-  {
-    name: "more",
-    component: <More />,
-    title: "More",
-  },
-];
+import { menuItems } from "../constants";
 
 export const Navigation = ({ isFlat = false, selectedItem, ...props }) => {
   return (

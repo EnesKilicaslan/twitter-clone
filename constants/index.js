@@ -1,4 +1,2 @@
-export const SCREEN_SIZE = {
-  DESKTOP: 1270,
-  TABLET: 980,
-};
+export { SCREEN_SIZE } from "./Size";
+export { menuItems } from "./MenuItems";
