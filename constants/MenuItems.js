@@ -27,9 +27,9 @@ export const menuItems = [
   },
 
   {
-    name: "notification",
+    name: "notifications",
     component: <Notification />,
-    title: "Notification",
+    title: "Notifications",
     notification: 15,
   },
   {
@@ -38,9 +38,9 @@ export const menuItems = [
     title: "Messages",
   },
   {
-    name: "bookmark",
+    name: "bookmarks",
     component: <Bookmark />,
-    title: "Bookmark",
+    title: "Bookmarks",
   },
 
   {
