@@ -7,11 +7,16 @@ export const NavButton = ({
   notificationCount,
   children,
   selected,
+  className,
   ...props
 }) => {
   return (
     <Button
-      className={cn(styles.navButton, selected && styles.selectedNavButton)}
+      className={cn(
+        styles.navButton,
+        selected && styles.selectedNavButton,
+        className
+      )}
       {...props}
     >
       {notificationCount && (

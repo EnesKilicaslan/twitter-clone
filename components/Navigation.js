@@ -13,6 +13,8 @@ export const Navigation = ({ isFlat = false, selectedItem, ...props }) => {
           selected={item.name === selectedItem}
           notificationCount={item.notification}
           key={item.name}
+          link={item.link}
+          className={styles.navigationButton}
         >
           {item.component}
           {item.title && !isFlat && <TextTitle>{item.title}</TextTitle>}
