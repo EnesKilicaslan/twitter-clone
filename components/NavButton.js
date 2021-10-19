@@ -14,8 +14,8 @@ export const NavButton = ({
     <Button
       className={cn(
         styles.navButton,
-        selected && styles.selectedNavButton,
-        className
+        className,
+        selected && styles.selectedNavButton
       )}
       {...props}
     >

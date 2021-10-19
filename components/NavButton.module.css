@@ -39,5 +39,7 @@
 }
 
 .selectedNavButton {
-  background-color: var(--c-theme);
+  background-color: var(--c-theme-10);
+  border-color: var(--c-theme-10);
+  color: var(--c-theme);
 }

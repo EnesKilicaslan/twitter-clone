@@ -10,7 +10,7 @@ export const Navigation = ({ isFlat = false, selectedItem, ...props }) => {
     <nav className={styles.navigation}>
       {menuItems.map((item) => (
         <NavButton
-          selected={item.name === selectedItem}
+          selected={item.link === selectedItem}
           notificationCount={item.notification}
           key={item.name}
           link={item.link}

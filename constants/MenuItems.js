@@ -13,12 +13,12 @@ import {
 export const menuItems = [
   {
     name: "twitter",
-    link: "/home",
-    component: <Twitter style={{ fontSize: 30 }} />,
+    link: "/",
+    component: <Twitter style={{ fontSize: 30, color: "white" }} />,
   },
   {
     name: "home",
-    link: "/home",
+    link: "/",
     component: <Home />,
     title: "Home",
   },
