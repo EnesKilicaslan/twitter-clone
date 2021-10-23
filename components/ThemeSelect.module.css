@@ -1,0 +1,17 @@
+.themeSelectContainer {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.themeSelectBox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.themeSelectItem {
+  margin-right: 6px;
+}
+
+.themeSelectLabel {
+  margin-right: 30px;
+}
