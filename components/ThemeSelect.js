@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styles from "./ThemeSelect.module.css";
+import { ThemeContext } from "../store";
 
 const THEME_OPTIONS = [
   {
@@ -17,22 +18,23 @@ const THEME_OPTIONS = [
 ];
 
 export const ThemeSelect = () => {
-  const [selected, setSelected] = useState(THEME_OPTIONS[0].key);
+  const { theme, onThemeChange } = useContext(ThemeContext);
 
   return (
     <div className={styles.themeSelectContainer}>
-      {THEME_OPTIONS.map((theme) => (
+      {THEME_OPTIONS.map((themeOption) => (
         <div className={styles.themeSelectBox}>
           <input
             type="radio"
             name="theme"
-            value={theme.key}
+            value={themeOption.key}
+            id={themeOption.key}
             className={styles.themeSelectItem}
-            checked={selected === theme.key}
-            onChange={(e) => setSelected(theme.key)}
+            checked={theme === themeOption.key}
+            onChange={(e) => onThemeChange(themeOption.key)}
           />
-          <label htmlFor={theme.key} className={styles.themeSelectLabel}>
-            {theme.value}
+          <label htmlFor={themeOption.key} className={styles.themeSelectLabel}>
+            {themeOption.value}
           </label>
         </div>
       ))}

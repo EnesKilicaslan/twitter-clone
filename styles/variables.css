@@ -9,3 +9,7 @@
 
   --fade: 120ms;
 }
+
+html.dim:root {
+  --c-primary: #444;
+}
