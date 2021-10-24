@@ -23,7 +23,7 @@ export const ThemeSelect = () => {
   return (
     <div className={styles.themeSelectContainer}>
       {THEME_OPTIONS.map((themeOption) => (
-        <div className={styles.themeSelectBox}>
+        <div className={styles.themeSelectBox} key={themeOption.key}>
           <input
             type="radio"
             name="theme"

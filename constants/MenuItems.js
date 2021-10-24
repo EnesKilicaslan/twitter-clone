@@ -14,7 +14,7 @@ export const menuItems = [
   {
     name: "twitter",
     link: "/",
-    component: <Twitter style={{ fontSize: 30, color: "white" }} />,
+    component: <Twitter style={{ fontSize: 30 }} />,
   },
   {
     name: "home",

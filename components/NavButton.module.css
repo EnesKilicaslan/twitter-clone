@@ -29,12 +29,16 @@
     font-size: 11px;
 
     background-color: var(--c-theme);
-    color: var(--c-text-color);
+    color: var(--c-theme-button-color);
     border: 1px solid var(--c-primary);
 
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &:global(.twitter) {
+    color: var(--c-twitter-icon);
   }
 }
 

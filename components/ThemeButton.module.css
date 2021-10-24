@@ -8,9 +8,11 @@
 
   font-weight: bold;
 
+  color: var(--c-theme-button-color);
+
   &:hover {
     background-color: var(--c-theme);
-    color: var(--c-text-color);
+    color: var(--c-theme-button-color);
   }
 }
 
