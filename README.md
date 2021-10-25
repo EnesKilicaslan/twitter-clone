@@ -14,10 +14,11 @@ this is a side project to create a clone of twitter which is well known social m
 
 ## Features
 
-- [ ] Theme support
-- [ ] Tweet component
+- [x] Theme support
+- [x] Tweet component
 - [ ] API for timeline stream
 - [ ] Modal for sending tweet
+- [ ] Folder structure
 
 ## Bugs
 
