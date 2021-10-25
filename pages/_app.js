@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
     setTheme(theme);
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const initTheme = localStorage.getItem("THEME") ?? "light";
     setTheme(initTheme);
   }, []);
