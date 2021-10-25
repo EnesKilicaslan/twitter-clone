@@ -4,7 +4,6 @@ import "../styles/main.css";
 
 import { ThemeContext } from "../store";
 import { useEffect } from "react";
-import { async } from "q";
 
 export default function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState();
@@ -36,7 +35,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       {theme && (
         <ThemeContext.Provider value={{ theme, onThemeChange }}>
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </ThemeContext.Provider>
       )}
     </>
