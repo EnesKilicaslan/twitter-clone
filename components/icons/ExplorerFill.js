@@ -3,9 +3,9 @@ import * as React from "react";
 function SvgExplorerFill(props) {
   return (
     <svg
-      width={24}
-      height={24}
-      fill="none"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
