@@ -1,8 +1,12 @@
 import React from "react";
-import { Layout } from "../components";
+import { Layout, ThemeSelect } from "../components";
 
 export const MorePage = () => {
-  return <Layout>More</Layout>;
+  return (
+    <Layout>
+      <ThemeSelect />
+    </Layout>
+  );
 };
 
 export default MorePage;

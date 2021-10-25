@@ -5,7 +5,7 @@ import cn from "classnames";
 import { useWindowSize } from "../hooks";
 import { SCREEN_SIZE } from "../constants";
 
-import { Sidebar, Main, Extra, ThemeSelect } from "../components";
+import { Sidebar, Main, Extra } from "../components";
 
 export const Layout = ({ children }) => {
   const size = useWindowSize();
@@ -14,10 +14,7 @@ export const Layout = ({ children }) => {
     <div className={cn(styles.layout)}>
       <Sidebar isFlat={size.width < SCREEN_SIZE.TABLET}>sidebar</Sidebar>
 
-      <Main>
-        {children}
-        <ThemeSelect />
-      </Main>
+      <Main>{children}</Main>
 
       {size.width > SCREEN_SIZE.DESKTOP && (
         <Extra>{JSON.stringify(size.width > SCREEN_SIZE.DESKTOP)}</Extra>
