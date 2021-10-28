@@ -1,25 +1,16 @@
 import React from "react";
 import { Layout, Tweet } from "../components";
+import useSWR from "swr";
+import Fetcher from "../libs/Fetcher";
 
 export const HomePage = () => {
+  const { data } = useSWR("/api/tweet", Fetcher);
+
   return (
     <Layout>
-      <Tweet
-        name="Enes Kilicaslan"
-        slug="eneski"
-        dateTime={new Date(2021, 4, 10)}
-        content={`Not following your trading plan asdasd asd asdasd d
-      sad
-asdds`}
-      />
-      <Tweet
-        name="Enes Kilicaslan"
-        slug="eneski"
-        dateTime={new Date(2021, 9, 23)}
-        content={`Not following your trading plan asdasd asd asdasd d
-      sad
-asdds`}
-      />
+      {!data
+        ? "Loading....."
+        : data.map((tweet) => <Tweet key={tweet.id} {...tweet} />)}
     </Layout>
   );
 };
