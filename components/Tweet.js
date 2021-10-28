@@ -4,49 +4,68 @@ import { Avatar, Button } from "./";
 import { Reply, Retweet, Like, Share } from "./icons";
 import { formatDistanceToNow } from "date-fns";
 
-export const Tweet = ({ name, slug, dateTime, content }) => {
+export const Tweet = ({
+  created_at,
+  reply_count,
+  retweet_count,
+  favorite_count,
+  favorited,
+  text,
+  user,
+}) => {
   return (
     <article className={styles.tweet}>
       <div className={styles.avatar}>
-        <Avatar />
+        <Avatar src={user.profile_image_url} />
       </div>
       <div className={styles.contentContainer}>
         <header className={styles.contentHeader}>
           <span className={styles.name}>
-            {name} {"  "}
+            {user.name} {"  "}
           </span>
           <span className={styles.slug}>
-            @{slug}
+            @{user.screen_name}
             {"  "}
           </span>{" "}
           {"  "}·{"  "}
-          {dateTime && (
+          {created_at && (
             <span className={styles.dateTime}>
-              {formatDistanceToNow(dateTime)}
+              {formatDistanceToNow(new Date(created_at))}
             </span>
           )}
         </header>
 
-        <div className={styles.content}>{content}</div>
+        <div className={styles.content}>{text}</div>
         <footer className={styles.actionIcons}>
           <div className={styles.actionIconItem}>
             <Button className={styles.actionIconItemButton}>
               <Reply />
             </Button>
-            <span className={styles.actionIconItemNumber}>3</span>
+            {reply_count && (
+              <span className={styles.actionIconItemNumber}>{reply_count}</span>
+            )}
           </div>
 
           <div className={styles.actionIconItem}>
             <Button className={styles.actionIconItemButton}>
               <Retweet />
             </Button>
-            <span className={styles.actionIconItemNumber}>12</span>
+            {retweet_count && (
+              <span className={styles.actionIconItemNumber}>
+                {retweet_count}
+              </span>
+            )}
           </div>
 
           <div className={styles.actionIconItem}>
             <Button className={styles.actionIconItemButton}>
               <Like />
             </Button>
+            {favorite_count && (
+              <span className={styles.actionIconItemNumber}>
+                {favorite_count}
+              </span>
+            )}
           </div>
 
           <div className={styles.actionIconItem}>
