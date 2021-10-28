@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Tweet } from "../components";
+import { Layout, Tweet, Loading } from "../components";
 import useSWR from "swr";
 import Fetcher from "../libs/Fetcher";
 
@@ -8,9 +8,11 @@ export const HomePage = () => {
 
   return (
     <Layout>
-      {!data
-        ? "Loading....."
-        : data.map((tweet) => <Tweet key={tweet.id} {...tweet} />)}
+      {!data ? (
+        <Loading />
+      ) : (
+        data.map((tweet) => <Tweet key={tweet.id} {...tweet} />)
+      )}
     </Layout>
   );
 };

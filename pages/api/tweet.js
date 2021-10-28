@@ -1,4 +1,10 @@
-export default function handler(req, res) {
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export default async function handler(req, res) {
+  await sleep(3000);
+
   const data = [
     {
       id: 1,

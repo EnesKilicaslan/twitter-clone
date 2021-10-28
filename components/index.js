@@ -13,3 +13,4 @@ export { Main } from "./ColumnMain";
 export { Extra } from "./ColumnExtra";
 export { ThemeSelect } from "./ThemeSelect";
 export { Tweet } from "./Tweet";
+export { Loading } from "./Loading";
