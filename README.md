@@ -24,3 +24,4 @@ this is a side project to create a clone of twitter which is well known social m
 
 - [ ] Blinking issue non-light themes on first render
 - [ ] Tweeter bird icon size should be larger
+- [ ] Check Adem's project for scrolling when tweet modal is open

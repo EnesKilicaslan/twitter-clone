@@ -3,8 +3,6 @@ function sleep(ms) {
 }
 
 export default async function handler(req, res) {
-  await sleep(3000);
-
   const data = [
     {
       id: 1,
