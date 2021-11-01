@@ -6,23 +6,27 @@
   bottom: 0;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 60px;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+
+  :global(html.light) & {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
-.modalHeader {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
-  margin-bottom: 8px;
+.modalCloseButton {
+  margin-left: 12px;
 }
 
 .modalContainer {
   padding: 12px 8px;
-  border-bottom: 1px solid var(--c-border-color);
   background-color: var(--c-primary);
   border-radius: 20px;
+
+  width: 600px;
 }
 
 .modalContent {
@@ -32,13 +36,25 @@
   grid-gap: 8px;
 }
 
+.modalHeader {
+  padding-top: 0.6rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 8px;
+
+  border-bottom: 1px solid var(--c-border-color);
+}
+
 .modalContentContainer {
   grid-area: modalContentContainer;
 }
 
 .avatar {
   grid-area: avatar;
-  //display: inline;
+  display: flex;
+  justify-content: center;
+}
+
+.modalContentArea {
 }
 
 .tweetText {
@@ -46,10 +62,34 @@
   overlay: none;
   resize: none;
   background: transparent;
+  width: 100%;
 
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
 }
 
 .modalFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-top: 1px solid var(--c-border-color);
+  margin-right: 28px;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--c-theme);
+  gap: 12px;
+}
+
+.icon {
+  color: var(--c-theme);
+}
+.footerThemeButton {
 }

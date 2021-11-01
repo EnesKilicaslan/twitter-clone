@@ -8,19 +8,19 @@ import {
   TweetModal,
 } from "../components";
 import { useRouter } from "next/router";
-import { root } from "postcss";
 
 export const Sidebar = ({ isFlat, children }) => {
   const [tweetModal, setTweetModal] = useState(false);
   const router = useRouter();
 
   const openTweetModal = () => {
-    const $root = document.querySelector("html").classList.add("no-scroll");
+    document.querySelector("html").classList.add("no-scroll");
     setTweetModal(true);
   };
 
   const closeTweetModal = () => {
-    const $root = document.querySelector("html").classList.remove("no-scroll");
+    document.querySelector("html").classList.remove("no-scroll");
+    setTweetModal(false);
   };
 
   return (
@@ -36,7 +36,7 @@ export const Sidebar = ({ isFlat, children }) => {
         </ThemeButton>
       </div>
 
-      {tweetModal && <TweetModal />}
+      {tweetModal && <TweetModal onClose={closeTweetModal} />}
       <div className={styles.profile}>
         <ProfileCard isFlat={isFlat} />
       </div>
