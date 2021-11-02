@@ -16,12 +16,12 @@ this is a side project to create a clone of twitter which is well known social m
 
 - [x] Theme support
 - [x] Tweet component
-- [ ] API for timeline stream
-- [ ] Modal for sending tweet
+- [x] API for timeline stream
+- [x] Modal for sending tweet
 - [ ] Folder structure
 
 ## Bugs
 
 - [ ] Blinking issue non-light themes on first render
-- [ ] Tweeter bird icon size should be larger
+- [x] Tweeter bird icon size should be larger
 - [ ] Check Adem's project for scrolling when tweet modal is open
