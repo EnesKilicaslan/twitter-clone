@@ -10,8 +10,6 @@ const ProfileAvatarTemplate = (args) => <Avatar {...args} />;
 
 export const ProfileAvatar = ProfileAvatarTemplate.bind({});
 ProfileAvatar.args = {
-  src:
-    "https://pbs.twimg.com/profile_images/1312920774072770560/G_NfS1Mo_400x400.jpg",
   alt: "enes",
 };
 

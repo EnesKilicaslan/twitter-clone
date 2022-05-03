@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 import styles from "./Avatar.module.css";
+import AvatarPhoto from "../images/avatar-default.png";
+import useSWR from "swr";
 
-export const Avatar = ({
-  src = "https://pbs.twimg.com/profile_images/1312920774072770560/G_NfS1Mo_400x400.jpg",
-  alt,
-  size = 47,
-}) => {
+export const Avatar = ({ src, alt, size = 47 }) => {
+  const [error, setError] = useState(false);
+
   return (
-    <div className={styles.imgContainer} style={{ width: size, height: size }}>
-      <img className={styles.img} src={src} alt={alt} />
+    <div className={styles.imgContainer}>
+      <Image
+        className={styles.img}
+        src={src && !error ? src : AvatarPhoto}
+        alt={alt}
+        width={size}
+        height={size}
+        onError={() => {
+          setError(true);
+        }}
+      />
     </div>
   );
 };

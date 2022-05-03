@@ -7,19 +7,15 @@ import cn from "classnames";
 export const ProfileCard = ({ src, alt, isFlat }) => {
   return (
     <Button className={styles.card}>
-      <Avatar
-        src="https://pbs.twimg.com/profile_images/1312920774072770560/G_NfS1Mo_400x400.jpg"
-        alt="enes"
-        size={isFlat ? 39 : 47}
-      />
+      <Avatar src={src} alt={alt} size={isFlat ? 39 : 47} />
       {!isFlat && (
         <>
           <div className={styles.cardBody}>
             <TextBody isBold={true} className={styles.bodyItem}>
-              Enes Kasd
+              Enes K.
             </TextBody>
             <TextBody className={cn(styles.bodyItem, styles.slug)}>
-              @asdadsads
+              @eeneski
             </TextBody>
           </div>
 

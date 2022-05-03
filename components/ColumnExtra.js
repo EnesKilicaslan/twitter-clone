@@ -5,12 +5,5 @@ import { useWindowSize } from "../hooks";
 
 export const Extra = ({ children }) => {
   const size = useWindowSize();
-  return (
-    <div className={cn(styles.extra)}>
-      --{window.innerWidth}
-      ---{children}
-      -------
-      {JSON.stringify(size)}
-    </div>
-  );
+  return <div className={cn(styles.extra)}>Intentionally left blank</div>;
 };
