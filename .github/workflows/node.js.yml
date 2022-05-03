@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,20 +19,24 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        
-    - run: yarn install
-    - run: yarn build
-    - run: yarn export
-    
-    
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: build # The folder the action should deploy.
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - run: yarn install
+        working-directory: client
+
+      - run: yarn build
+        working-directory: client
+
+      - run: yarn export
+        working-directory: client
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
