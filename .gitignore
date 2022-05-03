@@ -105,6 +105,5 @@ dist
 
 .vscode
 
-out/storybook
-
+out
 build
