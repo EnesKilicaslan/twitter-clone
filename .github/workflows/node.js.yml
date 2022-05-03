@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [14.16.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,14 +26,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
 
-      - run: yarn install
-        working-directory: client
-
+      - run: yarn install --ignore-engines
       - run: yarn build
-        working-directory: client
-
       - run: yarn export
-        working-directory: client
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
