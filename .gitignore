@@ -105,5 +105,5 @@ dist
 
 .vscode
 
-public/storybook
+out/storybook
 
