@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Avatar.module.css";
-import AvatarPhoto from "../public/images/avatar-default.png";
+// import AvatarPhoto from "../public/images/avatar-default.png";
 import { imageLoader } from "../helpers";
 
 export const Avatar = ({ src, alt, size = 47 }) => {
@@ -21,6 +21,7 @@ export const Avatar = ({ src, alt, size = 47 }) => {
           setError(true);
         }}
         unoptimized={true}
+        quality={isRemoteImg}
       />
     </div>
   );

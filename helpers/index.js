@@ -1,5 +1,6 @@
-export function imageLoader({ src }) {
-  if (typeof src === "string") {
+export function imageLoader({ src, quality }) {
+  if (quality) {
+    //remote image
     return src;
   } else {
     // const imgSrc = `twitter-clone/images/${src}`;
