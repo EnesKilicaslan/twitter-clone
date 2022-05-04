@@ -13,7 +13,7 @@ export const Avatar = ({ src, alt, size = 47 }) => {
       <Image
         loader={imageLoader}
         className={styles.img}
-        src={isRemoteImg ? src : "avatar-default.png"}
+        src={isRemoteImg ? src : "images/avatar-default.png"}
         alt={alt}
         width={size}
         height={size}
