@@ -20,6 +20,7 @@ export const Avatar = ({ src, alt, size = 47 }) => {
         onError={() => {
           setError(true);
         }}
+        unoptimized={true}
       />
     </div>
   );
