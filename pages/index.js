@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Tweet, Loading } from "../components";
-import { data } from "./db/tweets";
+import { data } from "../db/tweets";
 
 export const HomePage = ({ data }) => {
   // const { data } = useSWR("/api/tweet", Fetcher);
